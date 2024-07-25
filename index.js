@@ -8,7 +8,7 @@ var typewriter = new Typewriter(app, {
 typewriter
   .pauseFor(1000)
   .typeString(
-    "I am an Office Manager, Marketing Lover and Human Resources Specialist."
+    "I am a Lifelong Learner, Problem Solver, and Tech Enthusiast."
   )
   .pauseFor(3000)
   .start();
@@ -18,16 +18,17 @@ var granimInstance = new Granim({
   direction: "top-bottom",
   isPausedWhenNotInView: true,
   image: {
-    source: "assets/snow.jpg", //change image for intro section if desired
+    source: "assets/walpaper.png",
     blendingMode: "multiply",
   },
   states: {
     "default-state": {
       gradients: [
-        ["#29323c", "#485563"],
-        ["#FF6B6B", "#556270"],
-        ["#80d3fe", "#7ea0c4"],
-        ["#f0ab51", "#eceba3"],
+        // ["#29323c", "#485563"],
+        // ["#FF6B6B", "#556270"],
+        // ["#80d3fe", "#7ea0c4"],
+        ["#81a39d", "#eceba3"],
+        ["#ffffff", "#ffffff"],
       ],
       transitionSpeed: 8000,
     },

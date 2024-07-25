@@ -178,13 +178,13 @@ ul {
   color: white;
 }
 
-.fa-instagram {
-  background: #7678ed;
+.fa-linkedin {
+  background: #5659e3;
   color: white;
 }
 
 .fa-github {
-  background: #0973fd;
+  background: #0e0e0e;
   color: white;
 }
 
@@ -262,3 +262,32 @@ ul {
     text-align: center;
   }
 }
+
+.topnav {
+  background-color: #f7f4f4;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: none;
+  color: #111111;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  height: 200px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #bcb0b0;
+  color: rgb(255, 255, 255);
+}
+
+/* Add a color to the active/current link */
+/* .topnav a.active {
+  background-color: #323a37;
+  color: white;
+} */
