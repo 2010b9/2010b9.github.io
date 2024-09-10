@@ -21,21 +21,21 @@
 }
 
 h1 {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 3rem;
   font-weight: 700;
   color: black;
 }
 
 h2 {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 2rem;
   font-weight: 500;
   color: black;
 }
 
 h3 {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
   color: black;
@@ -43,14 +43,14 @@ h3 {
 }
 
 p {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.2rem;
   font-weight: 400;
   color: black;
 }
 
 .time-text {
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 1.2rem;
   font-weight: 200;
   color: black;
