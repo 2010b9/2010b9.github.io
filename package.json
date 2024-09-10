@@ -6,10 +6,13 @@
   "version": "1.0.0",
   "description": "Bruno Vaz's personal website.",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "lint-and-format": "npm run lint && npm run format"
   },
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/2010b9/2010b9.github.io.git"
@@ -22,5 +25,11 @@
   "bugs": {
     "url": "https://github.com/2010b9/2010b9.github.io/issues"
   },
-  "homepage": "https://github.com/2010b9/2010b9.github.io#readme"
+  "homepage": "https://github.com/2010b9/2010b9.github.io#readme",
+  "devDependencies": {
+    "eslint": "^9.10.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.3.3"
+  }
 }
