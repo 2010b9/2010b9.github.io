@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "granim": "^2.0.0"
-  }
+  },
+  "name": "2010b9-website",
+  "version": "1.0.0",
+  "description": "Bruno Vaz's personal website.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2010b9/2010b9.github.io.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Bruno Vaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2010b9/2010b9.github.io/issues"
+  },
+  "homepage": "https://github.com/2010b9/2010b9.github.io#readme"
 }
