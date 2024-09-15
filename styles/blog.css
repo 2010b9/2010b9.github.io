@@ -19,6 +19,13 @@ body {
   border: 1px solid #ccc;
 }
 
+.text-content {
+  max-height: 12em; /* Adjust this to limit visible lines */
+  line-height: 2em; /* Adjust to match your text's line height */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .post h2 {
   margin-top: 0;
 }
