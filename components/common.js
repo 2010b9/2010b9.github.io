@@ -2,11 +2,11 @@ export function initializeTypewriter(elementId, text) {
   var app = document.getElementById(elementId);
 
   var typewriter = new Typewriter(app, {
-    loop: true,
-    delay: 75,
+    loop: false,
+    delay: 50,
   });
 
-  typewriter.pauseFor(1000).typeString(text).pauseFor(3000).start();
+  typewriter.pauseFor(500).typeString(text).pauseFor(3000).start();
 }
 
 export function initializeGranim(elementId, imageSource) {
