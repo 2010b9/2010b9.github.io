@@ -51,3 +51,31 @@ body {
   background: #333;
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .container-post {
+    width: 90%;
+  }
+
+  .post {
+    padding: 10px;
+  }
+
+  .read-more {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-post {
+    width: 100%;
+  }
+
+  .post {
+    padding: 5px;
+  }
+
+  .read-more {
+    padding: 3px;
+  }
+}

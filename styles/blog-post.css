@@ -1,0 +1,94 @@
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+h1 {
+  text-align: center;
+  line-height: 1em;
+}
+
+p {
+  margin: 1em 0;
+}
+
+a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.5em 10px;
+  color: #555;
+  border-left: 5px solid #eee;
+}
+
+pre {
+  background: #f4f4f4;
+  padding: 10px;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+}
+
+code {
+  background: #f4f4f4;
+  padding: 2px 4px;
+  border: 1px solid #ddd;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  filter: grayscale(100%);
+}
+
+.name,
+.date {
+  text-align: center;
+  margin-top: 10px;
+  font-family: -apple-system, 'system-ui', Aptos, Roboto, 'Segoe UI', Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 15px;
+  color: grey;
+}
+
+.date {
+  margin-top: 20px;
+  font-size: 14px;
+}
