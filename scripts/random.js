@@ -5,6 +5,6 @@ import {
 
 initializeTypewriter(
   'app',
-  'I am a Lifelong Learner, Problem Solver, and Tech Enthusiast.'
+  'Here you can find some things that do not fit in the other sections.'
 );
 initializeGranim('#canvas-image-blending', '../assets/walpaper.png');

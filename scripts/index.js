@@ -3,8 +3,5 @@ import {
   initializeGranim,
 } from '../components/common.js';
 
-initializeTypewriter(
-  'app',
-  'I am a Lifelong Learner, Problem Solver, and Tech Enthusiast.'
-);
+initializeTypewriter('app', 'Nice to meet you!');
 initializeGranim('#canvas-image-blending', './assets/walpaper.png');
