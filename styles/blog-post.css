@@ -10,7 +10,8 @@ body {
 .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  padding-top: 0px;
+  padding: 0px 20px;
   background-color: #fff;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
@@ -31,6 +32,7 @@ h1 {
 
 p {
   margin: 1em 0;
+  font-size: 20px;
 }
 
 a {
@@ -82,13 +84,9 @@ code {
 .date {
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 0px;
   font-family: -apple-system, 'system-ui', Aptos, Roboto, 'Segoe UI', Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  font-size: 15px;
-  color: grey;
-}
-
-.date {
-  margin-top: 20px;
   font-size: 14px;
+  color: grey;
 }
