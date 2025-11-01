@@ -323,12 +323,13 @@ ul {
   /* Adjust spacing for mobile */
   .main-content > .container {
     margin-bottom: 30px;
+    margin-top: 10px;
     transition: padding-bottom 0.3s ease;
   }
 
   /* Add extra padding when dropdown menu is open on mobile */
   .main-content > .container.menu-open {
-    padding-bottom: 50px;
+    padding-bottom: 20px;
   }
 
   /* Show hamburger menu on mobile */
@@ -371,7 +372,7 @@ ul {
   .topnav {
     display: none !important;
     position: absolute;
-    top: 50px;
+    top: 10px;
     left: 0;
     right: 0;
     flex-direction: column;
@@ -455,7 +456,7 @@ ul {
 
   /* Add more top margin to container on mobile */
   .main-content > .container {
-    margin-top: 30px;
+    margin-top: 15px;
   }
 
   /* Hero section adjustments */
@@ -526,7 +527,7 @@ ul {
 
     /* Add more top margin on smaller mobile devices */
     .main-content > .container {
-      margin-top: 25px;
+      margin-top: 10px;
     }
 
     .fa {
