@@ -1,12 +1,5 @@
 #canvas-image-blending {
-  position: absolute;
-  width: 100%;
-  height: 500px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+  display: none; /* Canvas background removed for better performance */
 }
 
 .main-content {
@@ -15,17 +8,22 @@
   z-index: 2;
 }
 
-/* Ensure content sections after hero appear below canvas */
+/* Hero section - hide the hero text section */
+.main-content > div[style*='height: 400px'] {
+  display: none !important; /* Hide hero section text */
+}
+
+/* Content sections - no hero section, so minimal spacing needed */
 .main-content > main {
   position: relative;
-  margin-top: 120px; /* Push content below canvas area (500px canvas - 400px hero + buffer) */
+  margin-top: 20px; /* Minimal spacing */
   z-index: 2;
 }
 
 .main-content > .flex-container-reverse,
 .main-content > .flex-container {
   position: relative;
-  margin-top: 120px; /* Push content below canvas area (500px canvas - 400px hero + buffer) */
+  margin-top: 20px; /* Minimal spacing */
   z-index: 2;
 }
 
@@ -345,17 +343,19 @@ ul {
 
   /* Hero section adjustments */
   .main-content > div[style*='height: 400px'] {
-    height: 300px !important;
+    height: 250px !important;
   }
 
   .main-content > div[style*='height: 400px'] h1 {
-    padding-top: 80px !important;
+    padding-top: 60px !important;
     font-size: 1.75rem !important;
+    color: #333 !important; /* Dark text for light background */
   }
 
   .main-content > div[style*='height: 400px'] p {
     padding-top: 15px !important;
     font-size: 1rem !important;
+    color: #555 !important; /* Dark text for light background */
   }
 
   /* Title image adjustments */
@@ -366,15 +366,14 @@ ul {
     display: block;
   }
 
-  /* Adjust content margin for mobile - account for reduced hero height */
-  /* Hero is 300px, so need margin to clear canvas and add buffer */
+  /* Adjust content margin for mobile */
   .main-content > main {
-    margin-top: 80px;
+    margin-top: 10px;
   }
 
   .main-content > .flex-container-reverse,
   .main-content > .flex-container {
-    margin-top: 80px;
+    margin-top: 10px;
   }
 
   /* Smaller mobile devices */
@@ -415,23 +414,27 @@ ul {
 
     /* Hero section adjustments for very small devices */
     .main-content > div[style*='height: 400px'] {
-      height: 250px !important;
+      height: 200px !important;
     }
 
     .main-content > div[style*='height: 400px'] h1 {
-      padding-top: 60px !important;
+      padding-top: 50px !important;
       font-size: 1.5rem !important;
+      color: #333 !important; /* Dark text for light background */
+    }
+
+    .main-content > div[style*='height: 400px'] p {
+      color: #555 !important; /* Dark text for light background */
     }
 
     /* Further adjust content margin on very small devices */
-    /* Hero is 250px, so need margin to clear canvas and add buffer */
     .main-content > main {
-      margin-top: 70px;
+      margin-top: 10px;
     }
 
     .main-content > .flex-container-reverse,
     .main-content > .flex-container {
-      margin-top: 70px;
+      margin-top: 10px;
     }
   }
 
