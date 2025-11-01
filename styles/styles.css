@@ -16,6 +16,11 @@ body {
   background-color: #1a1a1a;
 }
 
+/* Add spacing between navigation and content */
+.main-content > .container {
+  margin-bottom: 40px;
+}
+
 /* Hero section - hide the hero text section */
 .main-content > div[style*='height: 400px'] {
   display: none !important; /* Hide hero section text */
@@ -306,6 +311,11 @@ ul {
     gap: 15px;
   }
 
+  /* Adjust spacing for mobile */
+  .main-content > .container {
+    margin-bottom: 30px;
+  }
+
   .topnav {
     flex-wrap: wrap;
     justify-content: center;
@@ -430,6 +440,11 @@ ul {
       padding: 12px;
       font-size: 16px;
       width: 45px;
+    }
+
+    /* Adjust spacing for smaller mobile devices */
+    .main-content > .container {
+      margin-bottom: 20px;
     }
 
     /* Hero section adjustments for very small devices */
