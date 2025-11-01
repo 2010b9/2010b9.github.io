@@ -3,8 +3,9 @@ body {
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #1a1a1a;
   font-size: 18px;
+  color: #d0d0d0;
 }
 
 .container {
@@ -12,7 +13,7 @@ body {
   margin: 0 auto;
   padding-top: 0px;
   padding: 0px 20px;
-  background-color: #fff;
+  background-color: #1a1a1a;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
 }
 
@@ -36,7 +37,7 @@ p {
 }
 
 a {
-  color: #3498db;
+  color: #4a9eff;
   text-decoration: none;
 }
 
@@ -52,21 +53,23 @@ img {
 blockquote {
   margin: 1em 0;
   padding: 0.5em 10px;
-  color: #555;
-  border-left: 5px solid #eee;
+  color: #b0b0b0;
+  border-left: 5px solid #555;
 }
 
 pre {
-  background: #f4f4f4;
+  background: #2a2a2a;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid #444;
   overflow-x: auto;
+  color: #e0e0e0;
 }
 
 code {
-  background: #f4f4f4;
+  background: #2a2a2a;
   padding: 2px 4px;
-  border: 1px solid #ddd;
+  border: 1px solid #444;
+  color: #e0e0e0;
 }
 
 .avatar {
@@ -88,7 +91,7 @@ code {
   font-family: -apple-system, 'system-ui', Aptos, Roboto, 'Segoe UI', Helvetica,
     Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   font-size: 14px;
-  color: grey;
+  color: #999;
 }
 
 /* Mobile responsive styles for blog posts */
