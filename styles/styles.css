@@ -153,6 +153,8 @@ ul {
   color: #6bb3ff;
 }
 
+/* Social media icons keep their original colors - protected from theme overrides */
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
@@ -208,18 +210,18 @@ ul {
 }
 
 .fa-paper-plane {
-  background: #3d348b;
-  color: white;
+  background: #3d348b !important;
+  color: white !important;
 }
 
 .fa-linkedin {
-  background: #5659e3;
-  color: white;
+  background: #5659e3 !important;
+  color: white !important;
 }
 
 .fa-github {
-  background: #0e0e0e;
-  color: white;
+  background: #0e0e0e !important;
+  color: white !important;
 }
 
 /* Styling for the progress bars */
