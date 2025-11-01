@@ -6,10 +6,27 @@
   right: 0;
   bottom: 0;
   left: 0;
+  z-index: 1;
 }
 
 .main-content {
   padding: 5% 5%;
+  position: relative;
+  z-index: 2;
+}
+
+/* Ensure content sections after hero appear below canvas */
+.main-content > main {
+  position: relative;
+  margin-top: 120px; /* Push content below canvas area (500px canvas - 400px hero + buffer) */
+  z-index: 2;
+}
+
+.main-content > .flex-container-reverse,
+.main-content > .flex-container {
+  position: relative;
+  margin-top: 120px; /* Push content below canvas area (500px canvas - 400px hero + buffer) */
+  z-index: 2;
 }
 
 .header {
@@ -227,7 +244,8 @@ ul {
   width: 20%;
 }
 
-@media only screen and (max-width: 550px) and (min-width: 200px) {
+/* Mobile and tablet responsive styles */
+@media only screen and (max-width: 768px) {
   .container-fluid {
     align-content: center;
   }
@@ -262,17 +280,209 @@ ul {
   .small-container-left {
     text-align: center;
   }
+
+  /* Container and navigation fixes */
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+  }
+
+  .topnav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .topnav a {
+    font-size: 16px;
+    padding: 10px 8px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    font-family: 'Rubik', 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', sans-serif;
+  }
+
+  .right-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .fa {
+    padding: 15px;
+    font-size: 18px;
+    width: 50px;
+  }
+
+  /* Responsive font sizes */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .time-text {
+    font-size: 1rem;
+  }
+
+  /* Main content padding */
+  .main-content {
+    padding: 3% 3%;
+  }
+
+  /* Hero section adjustments */
+  .main-content > div[style*='height: 400px'] {
+    height: 300px !important;
+  }
+
+  .main-content > div[style*='height: 400px'] h1 {
+    padding-top: 80px !important;
+    font-size: 1.75rem !important;
+  }
+
+  .main-content > div[style*='height: 400px'] p {
+    padding-top: 15px !important;
+    font-size: 1rem !important;
+  }
+
+  /* Title image adjustments */
+  .title-image {
+    width: 100% !important;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* Adjust content margin for mobile - account for reduced hero height */
+  /* Hero is 300px, so need margin to clear canvas and add buffer */
+  .main-content > main {
+    margin-top: 80px;
+  }
+
+  .main-content > .flex-container-reverse,
+  .main-content > .flex-container {
+    margin-top: 80px;
+  }
+
+  /* Smaller mobile devices */
+  @media only screen and (max-width: 480px) {
+    .topnav a {
+      font-size: 14px;
+      padding: 8px 6px;
+      margin-right: 3px;
+      font-family: 'Rubik', 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', sans-serif;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+    }
+
+    .main-content {
+      padding: 2% 2%;
+    }
+
+    .fa {
+      padding: 12px;
+      font-size: 16px;
+      width: 45px;
+    }
+
+    /* Hero section adjustments for very small devices */
+    .main-content > div[style*='height: 400px'] {
+      height: 250px !important;
+    }
+
+    .main-content > div[style*='height: 400px'] h1 {
+      padding-top: 60px !important;
+      font-size: 1.5rem !important;
+    }
+
+    /* Further adjust content margin on very small devices */
+    /* Hero is 250px, so need margin to clear canvas and add buffer */
+    .main-content > main {
+      margin-top: 70px;
+    }
+
+    .main-content > .flex-container-reverse,
+    .main-content > .flex-container {
+      margin-top: 70px;
+    }
+  }
+
+  /* Original breakpoint for very small devices */
+  @media only screen and (max-width: 550px) and (min-width: 200px) {
+    .container-fluid {
+      align-content: center;
+    }
+
+    .header {
+      display: inline;
+      align-items: center;
+    }
+
+    .progressbar {
+      width: 60%;
+    }
+
+    .flex-container-reverse {
+      flex-direction: column-reverse;
+    }
+
+    .big-container-left,
+    .small-container-right {
+      flex: 100%;
+    }
+
+    .small-container-right {
+      text-align: center;
+    }
+
+    .big-container-right,
+    .small-container-left {
+      flex: 100%;
+    }
+
+    .small-container-left {
+      text-align: center;
+    }
+  }
 }
 
+/* Navigation bar styles - applied to all screen sizes */
 .topnav {
   background-color: #eee6e6;
   overflow: hidden;
   border-radius: 50px;
   padding: 12px;
   display: flex;
-  justify-content: center;
-  margin: auto;
   justify-content: space-between;
+  margin: auto;
 }
 
 /* Style the links inside the navigation bar */
@@ -284,6 +494,8 @@ ul {
   text-decoration: none;
   font-size: 20px;
   margin-right: 20px;
+  font-family: 'Rubik', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    sans-serif;
 }
 
 /* Change the color of links on hover */
@@ -306,4 +518,10 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
