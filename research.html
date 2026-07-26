@@ -1,0 +1,27 @@
+---
+layout: default
+nav: research
+title: Research
+permalink: /research/
+description: Peer-reviewed research by Bruno Vaz on GANs and synthetic data generation.
+---
+{%- assign papers = site.research | sort: "date" | reverse -%}
+<div class="page-head">
+  <div class="wrap">
+    <h1>Research</h1>
+    <span class="count">{{ papers | size }} publications</span>
+    <p class="sub">Peer-reviewed work, mostly on generative adversarial networks and synthetic data generation.</p>
+  </div>
+</div>
+<div class="wrap">
+  <div class="list">
+    {% for paper in papers %}
+    <a class="card" href="{{ paper.link }}" target="_blank" rel="noopener">
+      <p class="tag"><span class="pip"></span> {{ paper.venue }} · {{ paper.date | date: "%b %-d, %Y" }}</p>
+      <h2>{{ paper.title }}</h2>
+      <p class="clamp">{{ paper.content | strip_html | strip_newlines }}</p>
+      <span class="go">Show publication →</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>

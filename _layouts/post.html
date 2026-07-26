@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{%- assign words = content | number_of_words -%}
+{%- assign minutes = words | divided_by: 200 | plus: 1 -%}
+{%- if page.nav == 'random' -%}
+  {%- assign back_url = '/random/' -%}{%- assign back_label = 'back to random' -%}
+{%- else -%}
+  {%- assign back_url = '/blog/' -%}{%- assign back_label = 'back to writing' -%}
+{%- endif -%}
+<article class="reader">
+  <div class="wrap">
+    <a class="back" href="{{ back_url | relative_url }}">← {{ back_label }}</a>
+    <div class="meta-line">
+      <a href="{{ '/' | relative_url }}" class="avatar" aria-label="Bruno Vaz">
+        <img src="{{ '/assets/img/brunoVaz.jpeg' | relative_url }}" alt="Bruno Vaz">
+      </a>
+      <div>
+        <p class="who">{{ site.author }}</p>
+        <p class="when">{{ page.date | date: "%B %-d, %Y" }} · {{ minutes }} min read</p>
+      </div>
+    </div>
+    <h1>{{ page.title }}</h1>
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</article>

@@ -1,4 +1,7 @@
-# Ryanair priority boarding
+---
+title: Ryanair priority boarding
+summary: "I was recently on a Ryanair flight in which I had priority boarding. What follows is the story of my boarding experience, alongside an analysis of the benefits of Ryanair's priority boarding."
+---
 
 I was recently on a Ryanair flight in which I had priority boarding. I believe the events that occurred on that day are worthy of being written. What follows is the story of my boarding experience, alongside an analysis of the benefits of Ryanair’s priority boarding.
 

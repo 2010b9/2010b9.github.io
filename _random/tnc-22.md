@@ -1,4 +1,10 @@
-# TNC 22
+---
+title: TNC 22
+date: 2022-06-13
+kind: Talk
+dateline: June 13–17, 2022
+summary: "TNC is the largest and most prestigious research and education networking conference, attracting a diverse audience of over 800 participants from more than 70 countries."
+---
 
 ## What is TNC?
 
@@ -12,4 +18,4 @@ I participated in a [FCCN](https://www.fccn.pt/en/) programme, which provided me
 
 You can check my presentation in the video below!
 
-[![BRUNO TNC 22](https://i.ytimg.com/vi/2748eoymHqY/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARgTIF8ofzAP&rs=AOn4CLDREL_vram19zHanQqWNgrHeTkLRw)](https://youtu.be/2748eoymHqY?list=TLPQMjkwOTIwMjRRfao5WoKdwA)
+[![BRUNO TNC 22](https://i.ytimg.com/vi/2748eoymHqY/hqdefault.jpg)](https://youtu.be/2748eoymHqY?list=TLPQMjkwOTIwMjRRfao5WoKdwA)

@@ -1,0 +1,40 @@
+# ── Site ──────────────────────────────────────────────────────────────
+title: Bruno Vaz
+tagline: AI Engineer · Lisbon
+description: >-
+  Bruno Vaz — AI Engineer at DareData Engineering. Thoughts, research on
+  synthetic data & GANs, and other random stuff.
+url: "https://2010b9.github.io"
+author: Bruno Vaz
+email: 2010b9@gmail.com
+
+# Social identifiers (used in the header + footer)
+social:
+  github: 2010b9
+  linkedin: bruno-vaz-162203197
+  email: 2010b9@gmail.com
+
+# ── Build ─────────────────────────────────────────────────────────────
+markdown: kramdown
+permalink: /blog/:title/
+
+collections:
+  research:
+    output: false          # research items are external-link cards, no page
+  random:
+    output: true           # random items get their own reading page
+    permalink: /random/:name/
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post, nav: blog }
+  - scope: { path: "", type: random }
+    values: { layout: post, nav: random }
+
+exclude:
+  - node_modules
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .claude

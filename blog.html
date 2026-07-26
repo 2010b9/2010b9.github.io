@@ -1,0 +1,26 @@
+---
+layout: default
+nav: blog
+title: Blog
+permalink: /blog/
+description: Thoughts and writing by Bruno Vaz.
+---
+<div class="page-head">
+  <div class="wrap">
+    <h1>Writing</h1>
+    <span class="count">{{ site.posts | size }} post{% if site.posts.size != 1 %}s{% endif %}</span>
+    <p class="sub">Thoughts I've had in my head for a while.</p>
+  </div>
+</div>
+<div class="wrap">
+  <div class="list">
+    {% for post in site.posts %}
+    <a class="card" href="{{ post.url | relative_url }}">
+      <p class="tag"><span class="pip"></span> Blog · {{ post.date | date: "%B %-d, %Y" }}</p>
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.summary | default: post.excerpt | strip_html | truncate: 240 }}</p>
+      <span class="go">Read more →</span>
+    </a>
+    {% endfor %}
+  </div>
+</div>

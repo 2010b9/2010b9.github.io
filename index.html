@@ -1,118 +1,38 @@
-<!doctype html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Bruno's Homepage</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🔭</text></svg>"
-    />
-    <script src="scripts/granim.min.js"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-    <link rel="stylesheet" href="styles/styles.css" />
-  </head>
+---
+layout: default
+nav: about
+title:
+---
 
-  <body>
-    <canvas id="canvas-image-blending"></canvas>
-
-    <div
-      class="main-content"
-      style="text-align: center; width: 100%; position: absolute"
-    >
-      <div class="container">
-        <div class="mobile-menu-toggle" id="mobile-menu-toggle">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="topnav" id="topnav">
-          <a class="active aboutme" href="">🙋‍♂️ About Me</a>
-          <a href="pages/blog.html">📝 Blog</a>
-          <a href="pages/research.html">🔬 Research</a>
-          <a href="pages/random.html">💻 Random</a>
-        </div>
-        <div class="right-section">
-          <a
-            href="mailto:2010b9@gmail.com"
-            class="fa fa-paper-plane"
-            style="margin-right: 10px"
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/bruno-vaz-162203197/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="fa fa-linkedin"
-            style="margin-right: 10px"
-          ></a>
-          <a
-            href="https://github.com/2010b9"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="fa fa-github"
-          ></a>
-        </div>
-      </div>
-
-      <div class="" style="height: 400px">
-        <h1 style="padding-top: 120px; color: white">Hey, I'm Bruno!</h1>
-        <p style="padding-top: 25px; color: white" id="app"></p>
-      </div>
-
-      <div class="flex-container-reverse">
-        <div class="big-container-left">
-          <p class="time-text">Hey! Thanks for visiting my website.</p>
-          <p style="padding-bottom: 5px">
-            I'm Bruno. I love originality (although it is something quite
-            difficult to achieve), spending countless hours focused on an
-            interesting problem (doesn't have to particularly useful, just
-            interesting) and break complex ideas into simple blocks that I can
-            share with people. I'm also a fan of long walks and video games.<br /><br />
-            The goal of this website is to share some of my
-            <a href="pages/blog.html">thoughts</a>, the
-            <a href="pages/research.html">research</a> I was involved in and
-            other <a href="pages/random.html">random stuff</a> that doesn't fit
-            neither. It would make me extremely glad if something I share is of
-            use to someone.<br /><br />
-            I'm currently working as an AI Engineer (whatever that means) at a
-            company called
-            <a href="https://daredata.ai" target="_blank"
-              >DareData Engineering</a
-            >.<br /><br />
-            Feel free to contact me if you want to get in touch! I don't go to
-            LinkedIn often, so I would appreciate if you sent me an email
-            instead.
-          </p>
-        </div>
-        <div class="small-container-right">
-          <img src="assets/happyBruno.jpeg" class="title-image" />
-        </div>
+<section class="hero">
+  <div class="wavebg" id="wavebg" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="hero-content">
+      <p class="eyebrow">AI Engineer · DareData Engineering</p>
+      <h1 class="display">
+        Hey, I'm Bruno. I build things that
+        <span class="accent-txt">listen and speak.</span>
+      </h1>
+      <p class="lede">
+        I love originality (although it is something quite difficult to
+        achieve), spending countless hours focused on an interesting problem
+        (doesn't have to be particularly useful, just interesting) and breaking
+        complex ideas into simple blocks that I can share with people. I'm also
+        a fan of long walks and video games.
+      </p>
+      <p class="lede">
+        I'm currently working as an AI Engineer (whatever that means) at a
+        company called
+        <a href="https://daredata.ai" target="_blank" rel="noopener"
+          >DareData Engineering</a
+        >. Feel free to contact me if you want to get in touch!
+      </p>
+      <div class="contact-row">
+        <a class="btn primary" href="mailto:{{ site.social.email }}"
+          >Get in touch →</a
+        >
+        <a class="btn" href="{{ '/blog/' | relative_url }}">Read the blog</a>
       </div>
     </div>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
-    <script src="scripts/index.js" charset="utf-8" type="module"></script>
-  </body>
-</html>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+{%- assign nav = page.nav -%}
+<header class="bar">
+  <a class="brand" href="{{ '/' | relative_url }}" aria-label="Home">
+    <span class="bars" aria-hidden="true"><b></b><b></b><b></b><b></b></span>
+    <span>bruno_vaz</span>
+  </a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="links" id="navLinks">
+    <a href="{{ '/'          | relative_url }}"{% if nav == 'about'    %} class="on" aria-current="page"{% endif %}>about</a>
+    <a href="{{ '/blog/'     | relative_url }}"{% if nav == 'blog'     %} class="on" aria-current="page"{% endif %}>blog</a>
+    <a href="{{ '/research/' | relative_url }}"{% if nav == 'research' %} class="on" aria-current="page"{% endif %}>research</a>
+    <a href="{{ '/random/'   | relative_url }}"{% if nav == 'random'   %} class="on" aria-current="page"{% endif %}>random</a>
+  </nav>
+
+  <div class="bar-right">
+    <button class="icon-btn" id="themeToggle" aria-label="Toggle light/dark theme" title="Toggle theme">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+    </button>
+    <a class="icon-btn" href="mailto:{{ site.social.email }}" aria-label="Email" title="Email">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+    </a>
+    <a class="icon-btn" href="https://github.com/{{ site.social.github }}" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></svg>
+    </a>
+  </div>
+</header>
